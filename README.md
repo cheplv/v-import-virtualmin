@@ -9,7 +9,7 @@ git clone https://github.com/cheplv/v-import-virtualmin.git /usr/local/v-import-
 ln -s /usr/local/v-import-virtualmin/v-import-virtualmin.php /usr/local/vesta/bin/v-import-virtualmin
 
 ###Remote SSH Passwordless Auth
-Add public root user ssh key (/root/.ssh/id_rsa.pub) to remote authorized_keys.
+Add public root user ssh key (/root/.ssh/id_rsa.pub) to remote server account authorized_keys (~/.ssh/authorized_keys).
 
 ###Run import  
 v-import-webmin ssh://root@remote-virtualmin.server.com "optional-remote-username"
