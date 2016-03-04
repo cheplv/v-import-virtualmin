@@ -94,7 +94,7 @@ function webminImportUserDomainMail($user, $domain, $domainInfo) {
 			$imapFileContents .= "Copy \"$domainMailUser\" \"$domainMailPass\" \"$domainMailUser\" \"$domainMailPass\"\n";
 		}
 
-		$imapCopyConfigFile = 'ImapCopy.cfg';
+		$imapCopyConfigFile = 'imapcopy.cfg';
 		$rv = file_put_contents($imapCopyConfigFile, $imapFileContents);
 		if ($rv !== FALSE) {
 			systemExec('imapcopy');
