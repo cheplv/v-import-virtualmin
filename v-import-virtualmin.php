@@ -185,7 +185,7 @@ function webminListUsers($serverUsers = true) {
 }
 
 function usage() {
-	echo "Usage: v-import-webmin ssh://user@remote-server.host:port <user>";
+	echo "Usage: v-import-virtualmin ssh://user@remote-server.host:port <user>";
 	die();
 }
 
